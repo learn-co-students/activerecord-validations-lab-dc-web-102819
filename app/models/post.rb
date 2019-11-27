@@ -11,5 +11,6 @@ class Post < ActiveRecord::Base
         if C.none? { |pattern| pattern.match title }
             errors.add(:title, "must be clickbait")
         end
+        
     end
 end
